@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: demo
+  datasource:  
+    url: jdbc:postgresql://192.168.56.104:5432/mydb?useSSL=false
+    username: user1  
+    password: Baumkuchen
+
+
+jpa:
+  hibernate:
+    ddl-auto: none  # Добавить столбцы из сущности
+  show-sql: true  # Выводить SQL в логи
+
+
+jwt:
+  secret: bdebe06efb3f69be12d530722e9c0a60d6260d2c4cc7083090b134f2b1315d30
+  expiration: 86400000
+
+server:
+  port: 8080
